@@ -8,28 +8,20 @@ Before(async ({page}) => {
     loginPage = new LoginPage(page);
 })
 
-Given('I navigate to {string}', async ({}, url) => {
-    await loginPage.launchURL(url);
-})
 Given('I enter a username {string}', async ({}, arg) => {
     await loginPage.enterUsername(arg);
 })
-
 Given('I enter a password {string}', async ({}, arg) => {
     await loginPage.enterPassword(arg);
 })
-        
-
 When('I click the login button', async ({}) => {
     await loginPage.clickLogin();
 })
-
 Then('I should see the page containing {string}', async ({}, message) => {
     await expect(loginPage.successMsg).toContainText(message)
 })      
-
 Then('I should see error message {string}', async ({}, message) => {
     await expect(loginPage.errorMsg).toContainText(message)
-})     
+})
 
 
