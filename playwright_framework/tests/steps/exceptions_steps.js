@@ -9,9 +9,6 @@ Before(async ({page}) => {
     exceptionsPage = new ExceptionsPage(page);
 })
 
-Given('I navigate to {string}', async ({}, url) => {
-    await exceptionsPage.launchURL(url);
-})
 Given('I navigate to the {string}', async ({}, url) => {
     await exceptionsPage.launchURL(url);
 });

@@ -8,6 +8,9 @@ Before(async ({page}) => {
     loginPage = new LoginPage(page);
 })
 
+Given('I navigate to {string}', async ({}, url) => {
+    await loginPage.launchURL(url);
+})
 Given('I enter a username {string}', async ({}, arg) => {
     await loginPage.enterUsername(arg);
 })

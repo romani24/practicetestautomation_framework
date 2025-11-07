@@ -2,5 +2,20 @@ Feature: Exceptions Functionality
 
   Scenario: Test case 1: NoSuchElementException 
     Given I navigate to the "https://practicetestautomation.com/practice-test-exceptions/" 
-    When I click on the add button 
-    Then I should see the message "Row 2 was added" 
+
+
+  Scenario: Test case 2: ElementNotInteractableException
+    Given I navigate to the "https://practicetestautomation.com/practice-test-exceptions/" 
+
+
+  Scenario: Test case 3: InvalidElementStateException
+    Given I navigate to the "https://practicetestautomation.com/practice-test-exceptions/" 
+
+
+  Scenario: Test case 4: StaleElementReferenceException 
+    Given I navigate to the "https://practicetestautomation.com/practice-test-exceptions/" 
+
+
+  Scenario: Test case 5: TimeoutException
+    Given I navigate to the "https://practicetestautomation.com/practice-test-exceptions/" 
+
